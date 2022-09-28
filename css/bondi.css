@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-btn {
+  background-color: rgba(255, 49, 80, 0.9);
+  color: #ffc400;
+  padding: 0.5rem 1rem;
+}
+.main-btn:hover {
+  background-color: #ff3150;
+  color: #ffc400;
+}
+
+.main-title::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: #33d1cc;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar {
+  background-color: #19283f;
+}
+.navbar .navbar-toggler {
+  box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded=true] {
+  border-color: #33d1cc;
+}
+.navbar .navbar-nav .navbar-link {
+  color: #fff;
+}
+.navbar .navbar-nav .navbar-link.active, .navbar .navbar-nav .navbar-link:focus, .navbar .navbar-nav .navbar-link:hover {
+  color: #33d1cc;
+}
+.navbar .search-btn {
+  border-left: 1px solid #33d1cc;
+}
+.navbar .search-btn svg {
+  color: #33d1cc;
+}
+
+.landing {
+  background-color: #19283f;
+  min-height: calc(100vh - 70px);
+}
+
+.features {
+  counter-reset: icon-num;
+}
+.features .feat .icon-holder {
+  height: 200px;
+}
+.features .feat .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.features .feat .icon-holder .number {
+  font-size: 12rem;
+  color: #eff7fa;
+}
+.features .feat .icon-holder .icon {
+  color: #33d1cc;
+}
+.features .feat h4 {
+  color: #ffc400;
+}
+
+.our-work {
+  background-color: #eff7fa;
+}
+.our-work ul .active {
+  background-color: #ff3150;
+  color: #ffc400;
+}
+.our-work ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.our-work ul li:not(.active):hover {
+  color: #ff3150;
+}
+.our-work .box {
+  padding: 5px;
+  overflow: hidden;
+}
+.our-work .box::before {
+  content: attr(data-work);
+  position: absolute;
+  background-color: rgba(51, 209, 204, 0.76);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  top: 5px;
+  left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.5rem;
+  transform: translateX(calc(-100% - 5px));
+  transition: 0.3s;
+}
+.our-work .box:hover::before {
+  transform: translateX(0);
+}
+
+.stuff .description {
+  max-width: 400px;
+}
+
+.team {
+  background-color: #eff7fa;
+}
+.team h2 {
+  color: #ffc400;
+}
+.team .box h4 {
+  background-color: #33d1cc;
+}
+.team .box blockquote::before {
+  content: open-quote;
+}
+.team .box blockquote::after {
+  content: close-quote;
+}
+
+.project {
+  background-color: #19283f;
+}
+
+.sub {
+  background-color: #ffc400;
+}
+.sub h5 {
+  color: #19283f;
+}
+.sub input[type=text] {
+  outline: none;
+}
+.sub input[type=text]::-moz-placeholder {
+  color: #fff;
+}
+.sub input[type=text]:-ms-input-placeholder {
+  color: #fff;
+}
+.sub input[type=text]::placeholder {
+  color: #fff;
+}
+.sub input[type=submit] {
+  color: #ffc400;
+  background-color: #19283f;
+}
+
+.footer {
+  background-color: #19283f;
+}
+.footer .copyright > span {
+  color: #33d1cc;
+}
+.footer .copyright > div span {
+  color: #ffc400;
+}
+.footer .contact ul svg {
+  width: 20px;
+  height: 20px;
+}
+.footer .contact ul .facebook {
+  background-color: #1877f2;
+}
+.footer .contact ul .twitter {
+  background-color: #1da1f2;
+}
+.footer .contact ul .linkedin {
+  background-color: #0077b5;
+}
+.footer .contact ul .youtube {
+  background-color: #ff0000;
+}
+
+/*
+less the lines of code in css and try to find an alternative in html
+*//*# sourceMappingURL=bondi.css.map */
